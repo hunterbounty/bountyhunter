@@ -145,7 +145,7 @@ contract('EtherSport', function (accounts) {
         return expectThrow(customContractFunctionCall(_other, 'claimTokens', '___empty___', 1, asyncBlank))
     })
 
-    it.only('claimTokens: should purchases tokens', async () => {
+    it('claimTokens: should purchases tokens', async () => {
         return customContractFunctionCall(_other, 'claimTokens', '___empty___',
             web3.toWei(1),
             async (err, resolve, reject) => {
