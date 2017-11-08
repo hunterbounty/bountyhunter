@@ -1,0 +1,51 @@
+{
+  "name": "ethersport-tokens",
+  "version": "0.0.1",
+  "description": "Ethersport.io Token Contracts",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "standard && truffle test",
+    "lint": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ethersport-io/tokensale.git"
+  },
+  "keywords": [
+    "ethereum"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ethersport-io/tokensale/issues"
+  },
+  "homepage": "https://github.com/ethersport-io/tokensale",
+  "dependencies": {
+    "log4js": "^2.3.10",
+    "solc": "^0.4.17",
+    "truffle-hdwallet-provider": "0.0.3",
+    "underscore": "^1.8.3",
+    "web3": "^0.18.4"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "solidity-coverage": "^0.2.7",
+    "standard": "^10.0.2"
+  },
+  "standard": {
+    "globals": [
+      "assert",
+      "it",
+      "before",
+      "beforeEach",
+      "artifacts",
+      "contract",
+      "web3"
+    ]
+  }
+}
