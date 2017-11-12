@@ -124,29 +124,32 @@ contract EtherSport is StandardToken {
         startBlock = _startBlock;
         endBlock   = _startBlock +_endBlockHeight;
 
-        escFundAddress = 0xd5f1a39c084b18faf7441ec5b7b97077c71a6750;
+        escFundAddress = 0xfA29D004fD4139B04bda5fa2633bd7324d6f6c76;
         allocationsLength = 0;
         //• 13% (13’000’000 ESC) will remain at EtherSport for supporting the game process;
         allocate(escFundAddress, 0); // will remain at EtherSport for supporting the game process (remaining unassigned supply);
-        allocate(0xe3d95ea237ecea3c80d08c8bd23286df1ed18f11, 5 * 10**6 * 10**18); // will remain at EtherSport for supporting the game process;
-        allocate(0xa78061767c8209e4113c9aaaabe6c3a2249c008f, 4 * 10**6 * 10**18); // will remain at EtherSport for supporting the game process;
-        allocate(0xab999ec7e0a94ebf388cdfbd84ab7aeb38290c37, 4 * 10**6 * 10**18); // will remain at EtherSport for supporting the game process;
+        allocate(0x610a20536e7b7A361D6c919529DBc1E037E1BEcB, 5 * 10**6 * 10**18); // will remain at EtherSport for supporting the game process;
+        allocate(0x198bd6be0D747111BEBd5bD053a594FD63F3e87d, 4 * 10**6 * 10**18); // will remain at EtherSport for supporting the game process;
+        allocate(0x02401E5B98202a579F0067781d66FBd4F2700Cb6, 4 * 10**6 * 10**18); // will remain at EtherSport for supporting the game process;
         //• 5% (5’000’000 ESC) will be allocated for the bounty campaign;
-        allocate(0x230bcdb2a54de4f1acd2431b2a62a94cbcd6cb76, 3 * 10**6 * 10**18); // will be allocated for the bounty campaign;
-        allocate(0x01c62edeaeac6b37dc03e1c8de2d6d2600094ef1, 2 * 10**6 * 10**18); // will be allocated for the bounty campaign;
+        allocate(0x778ACEcf52520266675b09b8F5272098D8679f43, 3 * 10**6 * 10**18); // will be allocated for the bounty campaign;
+        allocate(0xdE96fdaFf4f865A1E27085426956748c5D4b8e24, 2 * 10**6 * 10**18); // will be allocated for the bounty campaign;
         //• 5% (5’000’000 ESC) will be paid to the project founders and the team;
-        allocate(0x899cffc54306ee1b28921fa0ce3e525500361988, 2 * 10**6 * 10**18); // will be paid to the project founders and the team;
-        allocate(0xb27d5195c460489ad540c4cb254d606df8826165, 2 * 10**6 * 10**18); // will be paid to the project founders and the team;
-        allocate(0xba6643acc789edee6c3828bba4aa74ab7f8cf758, 1 * 10**6 * 10**18); // will be paid to the project founders and the team;
+        allocate(0x4E10125fc934FCADB7a30b97F9b4b642d4804e3d, 2 * 10**6 * 10**18); // will be paid to the project founders and the team;
+        allocate(0xF391B5b62Fd43401751c65aF5D1D02D850Ab6b7c, 2 * 10**6 * 10**18); // will be paid to the project founders and the team;
+        allocate(0x08474BcC5F8BB9EEe6cAc7CBA9b6fb1d20eF5AA4, 1 * 10**6 * 10**18); // will be paid to the project founders and the team;
         //• 5% (5’000’000 ESC) will be paid to the Angel investors;
-        allocate(0x9b14405a45e543730e46ac24b1f38305c593df6b, 2 * 10**6 * 10**18); // will be paid to the Angel investors.
-        allocate(0x4cc13478b4ee4702aa9701d7866773ab07a4a48c, 2 * 10**6 * 10**18); // will be paid to the Angel investors.
-        allocate(0x704c1930bd8b2650b4c334ef4923ffa228e9e725, 1 * 10**6 * 10**18); // will be paid to the Angel investors.
+        allocate(0x9F5818196E45ceC2d57DFc0fc0e3D7388e5de48d, 2 * 10**6 * 10**18); // will be paid to the Angel investors.
+        allocate(0x9e43667D1e3Fb460f1f2432D0FF3203364a3d284, 2 * 10**6 * 10**18); // will be paid to the Angel investors.
+        allocate(0x809040D6226FE73f245a0a16Dd685b5641540B74,  500 * 10**3 * 10**18); // will be paid to the Angel investors.
+        allocate(0xaE2542d16cc3D6d487fe87Fc0C03ad0D41e46AFf,  500 * 10**3 * 10**18); // will be paid to the Angel investors.
         //• 1% (1’000’000 ESC) will be left in the system for building the first jackpot;
-        allocate(0xef06c0bae3808e1233886d9423f74a2e84f17564, 1 * 10**6 * 10**18); // will be left in the system for building the first jackpot;
+        allocate(0xbC82DE22610c51ACe45d3BCf03b9b3cd179731b2, 1 * 10**6 * 10**18); // will be left in the system for building the first jackpot;
         //• 1% (1’000’000 ESC) will be distributed among advisors;
-        allocate(0xacc25d1c83d7d3564b008cadd80d360104c46e5c, 1 * 10**6 * 10**18); // will be distributed among advisors;
-
+        allocate(0x302Cd6D41866ec03edF421a0CD4f4cbDFB0B67b0,  800 * 10**3 * 10**18); // will be distributed among advisors;
+        allocate(0xe190CCb2f92A0dCAc30bb4a4a92863879e5ff751,   50 * 10**3 * 10**18); // will be distributed among advisors;
+        allocate(0xfC7cf20f29f5690dF508Dd0FB99bFCB4a7d23073,  100 * 10**3 * 10**18); // will be distributed among advisors;
+        allocate(0x1DC97D37eCbf7D255BF4d461075936df2BdFd742,   50 * 10**3 * 10**18); // will be distributed among advisors;
     }
 
     /// @notice Stop sale in case of emergency (i.e. circuit breaker)

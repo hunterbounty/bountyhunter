@@ -4,8 +4,8 @@ const EtherSport =
 module.exports = (deployer) => {
   console.log('deployer.deploy', Object.keys(deployer))
   deployer.deploy(EtherSport,
-      '0x21ec32c72c9976e7c1a52ec43c6158a7f24ccee1',
-      1000000,
+      '0x52eac68BEaFB8FFBde44C14e71BE31a9f4161D44',
+      4545041,
       44800,
       57600,
       57867,
